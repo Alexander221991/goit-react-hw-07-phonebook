@@ -36,10 +36,13 @@ const ContactForm = ({ onSubmit }) => {
   const { name, phone } = state;
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.phonebook}>
-        <label htmlFor={phoneBookID}>Name</label>
+        <label className={styles.label} htmlFor={phoneBookID}>
+          Name
+        </label>
         <input
+          className={styles.input}
           value={name}
           type="text"
           name="name"
@@ -48,8 +51,11 @@ const ContactForm = ({ onSubmit }) => {
           placeholder="enter new contact"
           required
         ></input>
-        <label htmlFor={phoneNumberID}>Number</label>
+        <label className={styles.label} htmlFor={phoneNumberID}>
+          Number
+        </label>
         <input
+          className={styles.input}
           value={phone}
           type="tel"
           name="phone"

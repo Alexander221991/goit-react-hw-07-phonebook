@@ -2,12 +2,50 @@
   display: flex;
   flex-direction: column;
   padding: 15px;
-  border: 1px solid;
   width: 240px;
   gap: 10px;
 }
+
 .phonebtn {
-  margin-top: 15px;
-  border-radius: 6px;
-  width: 120px;
+  border: none;
+  background-color: #289c2a;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: capitalize;
+  max-width: 140px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 5px;
+}
+
+.input {
+  border: 1px solid gray;
+  border-radius: 2px;
+  font-size: 16px;
+  outline: none;
+  padding: 5px 10px;
+  transition: all .3s ease-in-out;
+}
+
+.input:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input:focus {
+  border: 1px solid rgb(38, 136, 206);
+  box-shadow: unset;
 }
